@@ -1,0 +1,93 @@
+Team Task Manager - 2 to 5 Minute Demo Video Script
+
+Target length: 3 minutes
+
+Opening - 15 seconds
+Hello, this is Team Task Manager, a full-stack project management app built with React, Express, Prisma, PostgreSQL, and deployed on Railway. It supports authentication, role-based access, project management, task assignment, dashboard tracking, and audit logs.
+
+Scene 1: Live Deployment - 20 seconds
+Open:
+https://evalops-web-production.up.railway.app
+
+Show that the app is live on Railway.
+Mention:
+"This is not a local-only project. It is deployed and connected to a production PostgreSQL database on Railway."
+
+Scene 2: Login and Authentication - 25 seconds
+Login as admin:
+admin@example.com
+Password123!
+
+Mention:
+"Authentication uses JWT tokens and bcrypt password hashing. The backend validates input using Zod."
+
+Scene 3: Dashboard - 45 seconds
+Show:
+- Total tasks
+- Overdue tasks
+- In-progress tasks
+- Blocked tasks
+- Status chart
+- Sprint health completion indicator
+- Assigned vs completed metrics
+- Workload balance
+- Deadline radar
+
+Mention:
+"The dashboard is designed for quick operational visibility: status distribution, overdue work, workload balance, and upcoming deadlines are all visible without opening individual tasks."
+
+Scene 4: Project and Team Management - 40 seconds
+Go to Projects.
+Show:
+- Existing project
+- Member list
+- Add member form
+- Task creation form
+- Delete/remove controls visible only for admin
+
+Mention:
+"Admins can create projects, manage members, and assign tasks. Members have restricted permissions and can only update the status of tasks assigned to them."
+
+Scene 5: Kanban Task Tracking - 45 seconds
+Return to Dashboard.
+Show:
+- Drag a task between columns.
+- Use search or filters.
+- Show overdue-only filter.
+- Open a blocked status change and mention blocker reason.
+
+Mention:
+"The Kanban board supports drag-and-drop updates, search, filtering, priorities, deadlines, overdue detection, and guarded status transitions."
+
+Scene 6: Activity Log - 25 seconds
+Go to Audit.
+Show recent changes.
+
+Mention:
+"Important actions are audit logged so the team can see who created, assigned, updated, or scored work."
+
+Scene 7: Backend and Database - 30 seconds
+Show the GitHub repository briefly:
+https://github.com/sunchuhasika/evalops-task-manager
+
+Open:
+backend/prisma/schema.prisma
+backend/src/routes
+
+Mention:
+"The database schema is normalized around users, projects, memberships, tasks, and audit logs. The backend uses Express middleware for auth, validation, RBAC, and error handling."
+
+Closing - 15 seconds
+Mention:
+"This project satisfies the assignment requirements: live Railway deployment, REST APIs, PostgreSQL database, validations, relationships, role-based access, dashboard, README, and GitHub repository."
+
+Final Links To Show:
+Live URL:
+https://evalops-web-production.up.railway.app
+
+GitHub:
+https://github.com/sunchuhasika/evalops-task-manager
+
+Demo Accounts:
+Admin: admin@example.com / Password123!
+Member: member@example.com / Password123!
